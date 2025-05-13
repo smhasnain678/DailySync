@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.app-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h1 {
+  color: #2a6f97;
+  margin-bottom: 10px;
+  font-size: 2.8em;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.slogan {
+  color: #744210;
+  margin-bottom: 25px;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.day-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.day-nav button {
+  padding: 12px 18px;
+  border: 2px solid #2a6f97;
+  background-color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #2a6f97;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.day-nav button.active {
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4);
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(42, 111, 151, 0.3);
+}
+
+.day-nav button:hover {
+  background: linear-gradient(45deg, #23819c, #4ecdc4);
+  color: #ffffff;
+}
+.day-planner {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.activity-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.activity-form input,
+.activity-form select,
+.activity-form button {
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1.1em;
+  transition: border-color 0.3s ease;
+}
+
+.activity-form input:focus,
+.activity-form select:focus {
+  border-color: #4ecdc4;
+  outline: none;
+}
+
+.activity-form button {
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.activity-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #23819c, #45b7aa);
+}
+
+.activity-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.activity-card {
+  background: linear-gradient(135deg, #ffffff, #f7fafc);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #4ecdc4;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.edit-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edit-form input,
+.edit-form select {
+  flex: 1;
+  min-width: 130px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.edit-form button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.edit-form button:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card-content h4 {
+  margin: 0 0 12px;
+  font-size: 1.3em;
+  color: #2a6f97;
+}
+
+.work { color: #2a6f97; font-weight: 600; }
+.personal { color: #e76f51; font-style: italic; }
+
+.summary-btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #744210, #f4a261);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.summary-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #5c340f, #e07a5f);
+}
+
+.daily-summary {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+.daily-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.daily-summary th,
+.daily-summary td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.daily-summary th {
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4);
+  color: #ffffff;
+}
+
+.daily-summary td {
+  background: #ffffff;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.efficiency, .deviations {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f7fafc);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.progress-bar {
+  height: 25px;
+  background: #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4);
+  transition: width 0.5s ease;
+}
+
+.deviations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deviations li {
+  margin: 8px 0;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Add this to the end of App.css */
+.time-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.time-inputs label {
+  font-size: 0.9em;
+  color: #2a6f97;
+  font-weight: 500;
+}
+/* Existing styles remain unchanged, add these at the end of App.css */
+.edit-btn {
+  padding: 8px 15px;
+  background: linear-gradient(45deg, #2a6f97, #4ecdc4); /* Match the gradient of other buttons */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn:hover {
+  transform: scale(1.05); /* Slight scale animation on hover */
+  background: linear-gradient(45deg, #23819c, #45b7aa); /* Darker gradient on hover */
+}
